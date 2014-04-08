@@ -3,7 +3,7 @@
 Plugin Name: WP Recent Posts From Category
 Plugin URI: http://www.danieledesantis.net
 Description: Displays recent posts from selected category by generating a shortcode that can be used in widgets, posts and pages.
-Version: 1.0
+Version: 1.0.1
 Author: Daniele De Santis
 Author URI: http://www.danieledesantis.net
 Text Domain: wp-recent-posts-from-category
@@ -148,7 +148,7 @@ if(!class_exists('Rpfc'))
 				wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2');
 				wp_enqueue_script('jquery');
 			}
-    		wp_enqueue_script( 'rpfc-admin-script', plugins_url('js/wp-recent-posts-from-category.js', __FILE__), array('jquery'), '1.0');
+    		wp_enqueue_script( 'rpfc-admin-script', plugins_url('js/wp-recent-posts-from-category.js', __FILE__), array('jquery'), '1.0.1');
 		}	
 		
     }
