@@ -3,7 +3,7 @@ Contributors: danieledesantis
 Tags: recent posts, latest posts, category, recent, posts, list, shortcode, widget
 Requires at least: 3.1
 Tested up to: 3.8.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,9 @@ Yes, you can use a custom class for the container, or apply styles to the defaul
 4. You can use the shortcode in pages or posts as well.
 
 == Changelog ==
+
+= 1.0.1 =
+* Minor updates
 
 = 1.0 =
 * First release
