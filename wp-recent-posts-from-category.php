@@ -98,7 +98,7 @@ if(!class_exists('Rpfc'))
 		public function settings_page() {
 			echo '<div class="wrap">';
 			echo '<h2>' . __('WP Recent Posts From Category', 'wp-recent-posts-from-category') . '</h2>
-					<p>' . __('Select the desired options and click the "Generate shortcode" button, the copy the generated shortcode and paste it in a text widget, in a post or in a page.', 'wp-recent-posts-from-category') . '</p>';				
+					<p>' . __('Select the desired options and click the "Generate shortcode" button, then copy the generated shortcode and paste it in a text widget, in a post or in a page.', 'wp-recent-posts-from-category') . '</p>';				
 			echo '<h3>' . __('Shortcode Generator', 'wp-recent-posts-from-category') . '</h3>			
 					<form id="generate_shortcode_form" method="post" action="options.php">';
 			echo '<table class="form-table">  
