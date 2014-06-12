@@ -64,7 +64,7 @@ if(!class_exists('Rpfc'))
 			
 			$rpfc_query = new WP_Query( $rpfc_args );
 			
-			$output = '<div class="' . $sticky_count . $container . '">';
+			$output = '<div class="' . $container . '">';
 			
 			if ( $rpfc_query->have_posts() ) {
         		$output .= '<ul>';
