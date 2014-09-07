@@ -3,7 +3,7 @@
 Plugin Name: WP Recent Posts From Category
 Plugin URI: http://www.danieledesantis.net
 Description: Displays recent posts from selected category by generating a shortcode that can be used in widgets, posts and pages.
-Version: 1.0.2
+Version: 1.1.0
 Author: Daniele De Santis
 Author URI: http://www.danieledesantis.net
 Text Domain: wp-recent-posts-from-category
@@ -45,6 +45,7 @@ if(!class_exists('Rpfc'))
 				'category' => '',
 				'children' => true,
 				'posts' => 5,
+				'excerpt' => false,
 				'meta' => false,
 				'container' => 'rpfc-container'
 			), $atts ) );
@@ -71,7 +72,8 @@ if(!class_exists('Rpfc'))
 				while ( $rpfc_query->have_posts() ) {
 					$rpfc_query->the_post();
 					$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a>';
-					if ($meta) { $output .= '<br><small>' . get_the_author() . ' - ' . get_the_date() . '</small>'; };					
+					if ($excerpt) { $output .= '<br><span>' . get_the_excerpt() . '</span>'; };
+					if ($meta) { $output .= '<br><small>' . get_the_author() . ' - ' . get_the_date() . '</small>'; }
 					$output .= '</li>';
 				}
         		$output .= '</ul>';
@@ -119,6 +121,11 @@ if(!class_exists('Rpfc'))
 							</td>
 						</tr>
 						<tr valign="top">
+							<th scope="row">' . __('Excerpt', 'wp-recent-posts-from-category') . '</th>
+							<td><label for="display_excerpt" style="display:block"><input type="checkbox" name="display_excerpt" id="display_excerpt" value="true"> Display</label>
+							</td>
+						</tr>
+						<tr valign="top">
 							<th scope="row">' . __('Author and date', 'wp-recent-posts-from-category') . '</th>
 							<td><label for="display_author_date" style="display:block"><input type="checkbox" name="display_author_date" id="display_author_date" value="true"> Display</label>
 							</td>
@@ -132,6 +139,7 @@ if(!class_exists('Rpfc'))
 				</table>';				
 			echo submit_button( __('Generate Shortcode', 'wp-recent-posts-from-category') );
 			echo '</form>
+				<p id="shortcode_title"></p>
 				<p id="shortcode"></p>
 				<h3>' . __('Credits', 'wp-recent-posts-from-category') . '</h3>
 				<ul>

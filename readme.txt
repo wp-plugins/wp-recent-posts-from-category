@@ -2,8 +2,8 @@
 Contributors: danieledesantis
 Tags: recent posts, latest posts, category, recent, posts, list, shortcode, widget
 Requires at least: 3.1
-Tested up to: 3.9
-Stable tag: 1.0.2
+Tested up to: 4.0
+Stable tag: 1.1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,7 @@ Customizables options include:
 * the desired category
 * the number of posts to display
 * include/exclude posts from children categories
+* show excerpt
 * show author and date in the output.
 
 Styling the output is easy if you are confident with CSS, as you can apply a custom class to the list container, or use the default "rpfc-container" class instead.
@@ -63,6 +64,9 @@ Yes, you can use a custom class for the container, or apply styles to the defaul
 
 == Changelog ==
 
+= 1.1.0 =
+* Added excerpt
+
 = 1.0.2 =
 * Fixed minor bug
 
@@ -71,3 +75,8 @@ Yes, you can use a custom class for the container, or apply styles to the defaul
 
 = 1.0 =
 * First release
+
+== Upgrade Notice ==
+
+= 1.1.0 =
+This version allow you to show excerpts. It works with Wordpress 4.0

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Recent Posts From Category\n"
-"POT-Creation-Date: 2014-04-05 15:18+0100\n"
-"PO-Revision-Date: 2014-04-05 15:19+0100\n"
+"POT-Creation-Date: 2014-09-07 18:13+0100\n"
+"PO-Revision-Date: 2014-09-07 18:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -16,56 +16,60 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-recent-posts-from-category.php:100
+#: ../wp-recent-posts-from-category.php:102
 msgid "WP Recent Posts From Category"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:101
+#: ../wp-recent-posts-from-category.php:103
 msgid ""
-"Select the desired options and click the \"Generate shortcode\" button, the "
+"Select the desired options and click the \"Generate shortcode\" button, then "
 "copy the generated shortcode and paste it in a text widget, in a post or in "
 "a page."
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:102
+#: ../wp-recent-posts-from-category.php:104
 msgid "Shortcode Generator"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:107
+#: ../wp-recent-posts-from-category.php:109
 msgid "Category to display"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:112
+#: ../wp-recent-posts-from-category.php:114
 msgid "Children categories"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:117
+#: ../wp-recent-posts-from-category.php:119
 msgid "Number of posts"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:122
+#: ../wp-recent-posts-from-category.php:124
+msgid "Excerpt"
+msgstr ""
+
+#: ../wp-recent-posts-from-category.php:129
 msgid "Author and date"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:127
+#: ../wp-recent-posts-from-category.php:134
 msgid "Container's class"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:133
+#: ../wp-recent-posts-from-category.php:140
 msgid "Generate Shortcode"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:136
+#: ../wp-recent-posts-from-category.php:143
 msgid "Credits"
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:138
+#: ../wp-recent-posts-from-category.php:145
 msgid ""
 "\"WP Recent Posts From Category\" is a plugin by <a href=\"http://www."
 "danieledesantis.net/\" target=\"_blank\" title=\"Daniele De Santis\">Daniele "
 "De Santis</a>."
 msgstr ""
 
-#: ../wp-recent-posts-from-category.php:164
+#: ../wp-recent-posts-from-category.php:171
 msgid "Settings"
 msgstr ""
