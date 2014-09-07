@@ -8,6 +8,7 @@ jQuery(window).load(function() {
 	var	inputCategory    =   jQuery('#shortcode_category'),
 		inputChildren    =   jQuery('#display_children_categories'),
 		inputPosts       =   jQuery('#posts'),
+		inputExcerpt     =   jQuery('#display_excerpt'),
 		inputMeta        =   jQuery('#display_author_date'),
 		inputContainer   =   jQuery('#container_class'),
 		resultTitle      =   jQuery('#shortcode_title'),
@@ -21,6 +22,7 @@ jQuery(window).load(function() {
 		var	category    =
 			children    =
 			posts	    =
+			excerpt     =
 			meta	    =
 			container   =   ''
 		;
@@ -37,6 +39,10 @@ jQuery(window).load(function() {
 			var posts = ' posts="' + inputPosts.val() + '"';
 		}
 		
+		if(inputExcerpt.attr('checked')) {
+			var excerpt = ' excerpt="true"';
+		}
+		
 		if(inputMeta.attr('checked')) {
 			var meta = ' meta="true"';
 		}
@@ -45,8 +51,8 @@ jQuery(window).load(function() {
 			var container = ' container="' + inputContainer.val() + '"';
 		}
 		
-		resultTitle.html('Copy and paste the shortcode below in your page, post or widget:')
-		result.html('[rpfc_recent_posts_from_category' + category + children + posts + meta + container + ']');		
+		resultTitle.html('<strong>Copy and paste the shortcode below in your page, post or widget:</strong>')
+		result.html('[rpfc_recent_posts_from_category' + category + children + posts + excerpt + meta + container + ']');		
 	})
 	
 });
