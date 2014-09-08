@@ -79,4 +79,4 @@ Yes, you can use a custom class for the container, or apply styles to the defaul
 == Upgrade Notice ==
 
 = 1.1.0 =
-This version allow you to show excerpts. It works with Wordpress 4.0
+This version allow you to show excerpts. It works with Wordpress 4.0.
